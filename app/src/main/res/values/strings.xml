@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">My Event</string>
+    <string name="headline">Enter the headline</string>
+    <string name="description"> Enter the description</string>
+    <string name="picture">choose</string>
+    <string name="save">save</string>
+    <string name="top">Add New News Item</string>
+    <string name="add_news">Add News</string>
+    <string name="update">Update News Item</string>
+    <string name="select">No File Chosen</string>
+
+    <string-array name="options">
+        <item>select your category</item>
+        <item>Entertainment</item>
+        <item>Education</item>
+        <item>Politics</item>
+        <item>sports</item>
+        <item>Cinema</item>
+        <item>Business</item>
+        <item>Birthday</item>
+        <item>Occasions</item>
+    </string-array>
+</resources>

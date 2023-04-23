@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".add_news">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:padding="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/addNews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:fontFamily="@font/baloo_paaji_2_semibold"
+            android:gravity="center"
+            android:text="@string/top"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+
+        <EditText
+            android:id="@+id/headLine"
+            style="@style/editStyle"
+            android:hint="@string/headline" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_height="120dp"
+            style="@style/editStyle"
+            android:gravity="start"
+            android:hint="@string/description" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/selectPicture"
+                style="@style/selectButton"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:text="@string/picture" />
+
+            <TextView
+                android:id="@+id/picture"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="5"
+                android:background="@drawable/background_spinner"
+                android:ellipsize="end"
+                android:fontFamily="@font/baloo_paaji_2_semibold"
+                android:gravity="center"
+                android:maxLength="28"
+                android:maxLines="1"
+                android:text="@string/select"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:fontFamily="@font/baloo_paaji_2_semibold"
+            android:layout_margin="10dp"
+            android:tooltipText="@string/app_name"
+            android:autofillHints="creditCardExpirationDate"
+            android:background="@drawable/background_spinner" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/top"
+            android:fontFamily="@font/baloo_paaji_2_bold"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"
+            android:id="@+id/addNewsItem"/>
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/LoadProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>

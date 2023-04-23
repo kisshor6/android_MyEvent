@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".UpdateActivity">
+
+
+    <ImageView
+        android:id="@+id/iImage"
+        android:layout_width="match_parent"
+        android:src="@drawable/me"
+        android:scaleType="centerCrop"
+        android:layout_height="250dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:elevation="7dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/cardColor"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <EditText
+                android:id="@+id/iHeadline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:maxLines="1"
+                android:background="@color/cardColor"
+                android:ellipsize="end"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="23sp" />
+
+            <EditText
+                android:id="@+id/iDesc"
+                android:layout_below="@id/iHeadline"
+                android:text="@string/app_name"
+                android:layout_marginTop="20dp"
+                android:background="@color/cardColor"
+                android:textColor="@color/white"
+                android:fontFamily="@font/baloo_paaji_2_semibold"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_alignParentBottom="true"
+                android:id="@+id/iCategory"
+                android:textColor="#CDCCCC"
+                android:fontFamily="@font/actor"
+                android:letterSpacing="0.1"
+                android:text="@string/app_name"
+                android:layout_marginTop="10dp"
+                android:textAlignment="textEnd"
+                android:background="@color/cardColor"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/update"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:text="@string/save"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/background_spinner"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
